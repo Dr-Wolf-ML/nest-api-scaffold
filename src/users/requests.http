@@ -1,0 +1,41 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "a-new-user@whatever.com",
+    "password": "new-pwd"
+}
+
+### Sign in as an exisiting user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "a-new-user@whatever.com",
+    "password": "new-pwd"
+}
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
+### Get the current user
+GET http://localhost:3000/auth/whoami
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/1
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=info@messagevax.com
+
+### Delete a user with a given ID
+DELETE http://localhost:3000/auth/4
+
+### Update a user with a given ID
+PATCH http://localhost:3000/auth/10
+Content-Type: application/json
+
+{
+    "email": "request10@http.com",
+    "password": "my-request10-test-pwd"
+}

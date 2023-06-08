@@ -1,0 +1,14 @@
+# Create a report
+
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "price": 1000,
+    "make": "DAF",
+    "model": "first",
+    "year": 1960,
+    "lng": 40,
+    "lat": 50,
+    "milage": 990000
+}
